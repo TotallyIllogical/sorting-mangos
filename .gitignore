@@ -5,4 +5,8 @@ sitemap.xml.gz
 wp-config.php
 
 wp-admin
+
 wp-includes
+
+wp-content/themes/sorting-mangos/img
+wp-content/themes/sorting-mangos/node_modules

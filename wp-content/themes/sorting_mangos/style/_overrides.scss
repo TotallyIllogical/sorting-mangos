@@ -1,0 +1,196 @@
+/*
+Purple: 7A4BAC 654B81 431870 A77BD6 B393D6
+Orange: FF9863 BF8568 A64D20 FFB18A FFC6A9
+
+*/
+
+//My variables
+$body-background: #ddc9df;
+$linkcolor: #7A4BAC;
+$header-bg: #ff9763;
+$navbar-bg: #7A4BAC;
+$navbar-text: white;
+$navbar-active-bg: $header-bg;
+$navbar-active-text: $navbar-bg;
+$sidebar-bg: #B393D6;
+$sidebar-link: #431870;
+
+// Bootstrap variable overrides
+$body-bg: $body-background;
+$link-color: $linkcolor;
+$link-hover-color: darken($link-color, 15%);
+$font-size-base: 16px;
+
+$navbar-default-bg: $navbar-bg;
+$navbar-default-link-color: $navbar-text;
+$navbar-default-link-hover-color: $navbar-text;
+$navbar-default-link-hover-bg: lighten($navbar-default-bg, 10%);
+$navbar-default-link-active-color: $navbar-active-text;
+$navbar-default-link-active-bg: $navbar-active-bg;
+
+$navbar-default-toggle-hover-bg: lighten($navbar-bg, 10%);
+$navbar-default-toggle-icon-bar-bg: darken($navbar-bg, 50%);
+$navbar-default-toggle-border-color: black;
+
+$well-bg: $sidebar-bg;
+
+$font-family-sans-serif: "Lora", Helvetica, Arial, sans-serif;
+$font-family-serif: "Ubuntu", "Times New Roman", Times, serif;
+$headings-font-family: $font-family-serif; 
+
+$pagination-color: $navbar-text;
+$pagination-bg: $navbar-bg;
+$pagination-border: darken($pagination-bg, 15%);
+$pagination-hover-color: $navbar-text;
+$pagination-hover-bg: $navbar-default-link-hover-bg;
+$pagination-hover-border:  $pagination-border;
+$pagination-active-color: $navbar-default-link-active-color;
+$pagination-active-bg: $navbar-default-link-active-bg;
+$pagination-active-border: $pagination-border;
+
+//Basic
+body {
+	background-color: $body-bg;
+}
+.container {
+	max-width: 1000px;
+	padding: 0;
+}
+a {
+	font-weight: bold;
+}
+hr {
+	border-top: 1px solid $linkcolor !important;
+	background-color: $linkcolor;
+	color: $linkcolor;
+}
+
+//Header
+.menu-topmenu-container a{
+	text-transform: uppercase;
+}
+
+.my-nav-box {
+	background-color: $header-bg;
+}
+
+.navbar {
+	margin: 0px !important;
+}
+.navbar-default {
+	border-radius: 0px !important;
+}
+.nav .navbar-nav{
+	li {
+		display: inline !important;
+	}
+}
+.navbar, .navbar-default  {
+	border: 0 !important;
+	font-family: "Ubuntu", "Times New Roman", Times, serif;
+}
+
+.current_page_item, .current-menu-item {
+	background-color: $header-bg;
+	color:$navbar-active-text;
+	a {
+		color: $navbar-active-text !important;
+	}
+	a:hover {
+		color: $navbar-text !important;
+	}
+}
+
+//content
+.content {
+	padding: 20px;
+	background-color: white;
+	margin:0;
+	height: 100%;
+}
+.datetime {
+	color: #777;
+	font-size: 14px;
+}
+p.comment-form-comment{
+	label {
+		display: none;
+	}
+
+}
+.comment-list{
+	list-style-type: none;
+}
+input[value="Post Comment"]{
+	font-size: 16px;
+	padding: 2px 10px;
+	color: $navbar-default-link-color;
+	background-color: $sidebar-link;
+	font-weight: bold;
+	border: none;
+}
+
+//Sidebar
+.widget {
+	a {
+		color: $sidebar-link;
+	}
+	h1,h2,h3,h4,h5,h6{
+		color: white;
+	}
+	caption{
+		font-size: 20px;
+		color: white;
+	}
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"], 
+	textarea {
+		font-size: 16px;
+		padding: 2px 10px;
+		color: $navbar-default-link-color;
+		background-color: $sidebar-link;
+		font-weight: bold;
+		border: none;
+	}
+	input[type="text"]{
+		width: 100%;
+	}
+	form[role="search"]{
+		.screen-reader-text{
+			display: none;
+		}
+	}
+	#calendar_wrap {
+		table{
+			width: 100%;
+			text-align: center;
+			thead{
+				color: black;
+				td, th {
+					border: 1px solid darken($sidebar-bg,15%);
+					text-align: center;
+				}
+			}
+			tbody{
+				td, th {
+					color: darken($sidebar-bg, 25%);
+					padding: 0;
+					border: 1px solid darken($sidebar-bg,15%);
+				}
+			}
+		}
+	}ul{
+		padding-left: 20px;
+		li{
+			list-style-type: none;
+		}
+	}
+	
+}
+
+//Footer
+.footer {
+	background-color: white;
+}
